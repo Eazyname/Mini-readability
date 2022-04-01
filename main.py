@@ -50,10 +50,11 @@ class Article(Cleaning):
         self.headline = self.parse.h1.text.strip()
 
     def article_text(self):
-        if Rus_News[self.name] == "p":
-            return self.parse.find_all(Rus_News[self.name])
+        selector = Rus_News.get(self.name,"p")  
+        if selector == "p":
+            return self.parse.find_all(selector)
         else:
-            return self.parse.select(Rus_News[self.name])
+            return self.parse.select(selector)
 
     def clean_article_text(self):
         article = []
