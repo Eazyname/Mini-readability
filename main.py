@@ -40,7 +40,7 @@ class Cleaning:
                     href_url = link_replace(links.get('href'))
                     total = f"{links.text} [{href_url}]"
                     self.clean_article[i] = \
-                        self.clean_article[i].replace(links.text, total)
+                        self.clean_article[i].replace(links.text, total,1)
 
 
 class Article(Cleaning):
