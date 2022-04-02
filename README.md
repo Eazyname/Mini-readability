@@ -16,6 +16,8 @@
 8) https://www.interfax.ru/world/832683
 9) https://smotrim.ru/article/2697608?utm_source=sidebar
 
+Код вполне работоспособен на практически любом новостном сайте.
+
 Результаты работы есть в папке Example
 
 
